@@ -111,6 +111,8 @@ class WebDirectory implements InstallerScript
         $webDir = $this->filesystem->normalizePath($this->pluginConfig->get('web-dir'));
         $rootDir = $this->filesystem->normalizePath($this->pluginConfig->get('root-dir'));
 
+        $coreLinks = array_merge($coreLinks, (array) $this->pluginConfig->get('public-core-folders'));
+
         foreach ($coreLinks as $link) {
             $source = $rootDir . '/' . $link;
             $target = $webDir . '/' . $link;
