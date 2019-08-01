@@ -13,7 +13,7 @@
     ],
     "require": {
         "typo3/cms-composer-installers": "^1.4 || ^2.0",
-        "helhum/typo3-composer-setup": "^0.5.4"
+        "helhum/typo3-composer-setup": "^0.5.4 || dev-compat-v10"
     },
     "conflict": {
         "helhum/typo3-composer-setup": "<0.5.4",
